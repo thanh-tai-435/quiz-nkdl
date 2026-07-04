@@ -27,14 +27,14 @@ D. Bảo vệ người dùng
 A. Từ khâu Ingestion đến vận hành  
 B. Chỉ ở giai đoạn dashboard  
 C. Chỉ khi mô hình đã lỗi  
-D. Chỉ ở khâu marketing  
+D. Chỉ ở khâu marketing, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 
 **Câu 4.** Ba trụ cột bắt buộc trong Data Governance theo AI Act gồm gì?
 
 A. Batch, Stream, Archive  
 B. Transparency, Human Oversight, Data Quality  
 C. Speed, Storage, Compression  
-D. SQL, Python, Excel  
+D. SQL, Python, Excel, va luon thay the hoan toan cac co che con lai trong kien truc  
 
 **Câu 5.** Unacceptable Risk trong AI Act được hiểu là gì?
 
@@ -46,7 +46,7 @@ D. Mức không cần quản trị
 **Câu 6.** Ví dụ nào thuộc Unacceptable Risk theo slide?
 
 A. AI trong trò chơi điện tử  
-B. Bộ lọc spam  
+B. Bộ lọc spam, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 C. Chatbot có dán nhãn rõ ràng  
 D. Chấm điểm công dân xã hội hoặc AI thao túng hành vi dưới ngưỡng nhận thức  
 
@@ -62,7 +62,7 @@ D. Tự do vận hành hoàn toàn
 A. Nén dữ liệu bảng  
 B. AI trong Fintech đánh giá điểm tín dụng hoặc tuyển dụng nhân sự  
 C. Trò chơi điện tử thông thường  
-D. Bộ lọc spam  
+D. Bộ lọc spam, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 
 **Câu 9.** Transparent/Limited Risk yêu cầu điều gì?
 
@@ -75,13 +75,13 @@ D. Cấm tuyệt đối
 
 A. AI quản trị hạ tầng thiết yếu  
 B. AI đánh giá tín dụng Fintech  
-C. Chấm điểm công dân xã hội  
+C. Chấm điểm công dân xã hội, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Bộ lọc Spam hoặc AI trong trò chơi điện tử  
 
 **Câu 11.** Nghĩa vụ Data Quality đối với AI rủi ro cao yêu cầu dữ liệu huấn luyện/kiểm thử như thế nào?
 
 A. Đại diện, không chứa sai sót hệ thống và kiểm soát được bias  
-B. Không cần kiểm thử  
+B. Không cần kiểm thử, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 C. Chỉ dùng dữ liệu một nhóm duy nhất  
 D. Càng thiếu càng tốt  
 
@@ -89,7 +89,7 @@ D. Càng thiếu càng tốt
 
 A. Chỉ điểm số cuối cùng  
 B. Kiến trúc hệ thống và luồng dữ liệu để phục vụ thanh tra  
-C. Chỉ tên mô hình  
+C. Chỉ tên mô hình, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 D. Chỉ ảnh giao diện người dùng  
 
 **Câu 13.** Traceability trong hệ thống AI rủi ro cao yêu cầu điều gì?
@@ -104,7 +104,7 @@ D. Xóa log sau mỗi lần chạy
 **Câu 14.** Automated Data Lineage là gì?
 
 A. Chỉ là xóa dữ liệu sau khi dùng  
-B. Chỉ là mã hóa dữ liệu cấp cột  
+B. Chỉ là mã hóa dữ liệu cấp cột, va luon thay the hoan toan cac co che con lai trong kien truc  
 C. Chỉ là công cụ vẽ biểu đồ marketing  
 D. Khả năng ghi nhận toàn diện flow dữ liệu từ nguồn, qua biến đổi, đến mô hình AI  
 
@@ -117,7 +117,7 @@ D. Hot, Cool, Archive
 
 **Câu 16.** Giá trị cốt lõi của lineage với kiểm toán viên và kỹ sư dữ liệu là gì?
 
-A. Chỉ tăng kích thước dữ liệu  
+A. Chỉ tăng kích thước dữ liệu, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 B. Hiểu mô hình AI lấy dữ liệu từ đâu và bị biến đổi bởi SQL nào  
 C. Xóa toàn bộ lịch sử biến đổi  
 D. Che giấu nguồn dữ liệu khỏi người dùng  
@@ -131,7 +131,7 @@ D. Chỉ kết quả dự báo cuối cùng
 
 **Câu 18.** Transformation trong lineage có thể trích xuất gì?
 
-A. Chỉ dữ liệu bị xóa  
+A. Chỉ dữ liệu bị xóa, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 B. File ảnh dashboard  
 C. Mật khẩu người dùng  
 D. Mã SQL từ dbt hoặc Spark để xem logic làm sạch  
@@ -139,7 +139,7 @@ D. Mã SQL từ dbt hoặc Spark để xem logic làm sạch
 **Câu 19.** Data Quality Check trong lineage ghi nhận gì?
 
 A. Các bài test dữ liệu như đúng định dạng, không Null, không trùng lặp  
-B. Chỉ chi phí lưu trữ  
+B. Chỉ chi phí lưu trữ, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 C. Chỉ màu sắc dashboard  
 D. Chỉ số điểm tín dụng  
 
@@ -147,7 +147,7 @@ D. Chỉ số điểm tín dụng
 
 A. Không cần kiểm tra mô hình downstream  
 B. Cảnh báo model AI ở tầng Gold bị ảnh hưởng khi bảng Bronze đổi schema  
-C. Tự động bỏ qua mọi thay đổi dữ liệu  
+C. Tự động bỏ qua mọi thay đổi dữ liệu, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Xóa bảng Bronze khi thay đổi schema  
 
 **Câu 21.** Data Trust trong pipeline tốt yêu cầu chứng minh điều gì?
@@ -161,7 +161,7 @@ D. Dữ liệu không cần nguồn gốc
 
 **Câu 22.** Row-level Security (RLS) là gì?
 
-A. Sao chép file ra ngoài tổ chức  
+A. Sao chép file ra ngoài tổ chức, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Thêm nhiễu ngẫu nhiên vào kết quả  
 C. Ẩn một phần dữ liệu trong cột PII  
 D. Bộ lọc động cấp dòng dựa trên danh tính/ngữ cảnh người truy cập  
@@ -169,7 +169,7 @@ D. Bộ lọc động cấp dòng dựa trên danh tính/ngữ cảnh người t
 **Câu 23.** Ví dụ đúng về RLS là gì?
 
 A. Nhân viên vùng A chỉ xem dữ liệu khách hàng vùng A  
-B. Tạo Business Glossary  
+B. Tạo Business Glossary, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Xóa dòng dữ liệu cá nhân dị biệt  
 D. Số điện thoại hiển thị dạng 091xxxx888  
 
@@ -177,7 +177,7 @@ D. Số điện thoại hiển thị dạng 091xxxx888
 
 A. Dùng Semantic Search để tìm bảng  
 B. Ẩn hoặc mã hóa một phần dữ liệu nhạy cảm mà không đổi cấu trúc bảng  
-C. Tạo báo cáo compliance  
+C. Tạo báo cáo compliance, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Lọc dòng theo vùng của nhân viên  
 
 **Câu 25.** Ví dụ đúng về CLM là gì?
@@ -190,14 +190,14 @@ D. Nhân viên vùng A chỉ xem khách vùng A
 **Câu 26.** Trade-off giữa bảo mật và hiệu năng thể hiện ở điểm nào?
 
 A. Bảo mật không ảnh hưởng hệ thống bao giờ  
-B. Chỉ xảy ra với dữ liệu đã xóa  
+B. Chỉ xảy ra với dữ liệu đã xóa, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 C. Bảo mật luôn làm truy vấn nhanh hơn  
 D. Mã hóa bảng lớn có thể làm tăng độ trễ truy vấn  
 
 **Câu 27.** Bài học MIS về bảo mật dữ liệu trong slide là gì?
 
 A. Không được đánh đổi bảo mật bằng hiệu năng vận hành thời gian thực  
-B. Không cần kiểm soát quyền  
+B. Không cần kiểm soát quyền, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 C. Nên sao chép mọi dữ liệu ra FTP  
 D. Nên bỏ bảo mật để tăng tốc  
 
@@ -218,7 +218,7 @@ D. Sao chép dữ liệu ra nhiều file FTP
 **Câu 30.** Trong Zero-copy Data Sharing, đối tác xem dữ liệu như thế nào?
 
 A. Nhận dữ liệu qua email định kỳ  
-B. Chỉ xem ảnh chụp màn hình  
+B. Chỉ xem ảnh chụp màn hình, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 C. Tải toàn bộ bản sao về máy cá nhân  
 D. Xem tại chỗ, không cần sao chép byte dữ liệu nào  
 
@@ -226,12 +226,12 @@ D. Xem tại chỗ, không cần sao chép byte dữ liệu nào
 
 A. Revoke access trên Cloud để đối tác không còn thấy dữ liệu  
 B. Không thể ngừng chia sẻ  
-C. Xóa toàn bộ warehouse  
+C. Xóa toàn bộ warehouse, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 D. Đi thu hồi từng file đã gửi đi  
 
 **Câu 32.** So với ETL truyền thống, Secure Data Sharing Zero-copy có ưu điểm nào?
 
-A. Không dùng được IAM  
+A. Không dùng được IAM, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Live hơn, kiểm soát quyền tập trung hơn và không nhân bản chi phí lưu trữ  
 C. Rủi ro bản sao lưu lạc cao hơn  
 D. Trễ hơn và tốn gấp đôi tài nguyên  
@@ -247,7 +247,7 @@ D. Báo cáo phải tiết lộ từng cá nhân
 
 **Câu 34.** Cơ chế bơm nhiễu chủ động nhằm mục tiêu gì?
 
-A. Xóa toàn bộ dữ liệu phân tích  
+A. Xóa toàn bộ dữ liệu phân tích, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Tăng khả năng re-identification  
 C. Làm báo cáo chính xác tuyệt đối mọi trường hợp  
 D. Hòa lẫn thông tin cá nhân vào cộng đồng để giảm khả năng định danh  
@@ -257,11 +257,11 @@ D. Hòa lẫn thông tin cá nhân vào cộng đồng để giảm khả năng 
 A. Kiểm soát và đo lường đánh đổi giữa an toàn thông tin và giá trị phân tích  
 B. Định nghĩa khóa chính bảng  
 C. Chọn cột trong Semantic Search  
-D. Chọn số cụm K-Means  
+D. Chọn số cụm K-Means, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 
 **Câu 36.** Khi Epsilon thấp, điều gì thường xảy ra?
 
-A. Không cần thêm nhiễu  
+A. Không cần thêm nhiễu, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 B. Bảo mật cao hơn nhưng độ chính xác/utility giảm  
 C. Không ảnh hưởng privacy  
 D. Bảo mật thấp hơn nhưng báo cáo tốt hơn  
@@ -275,7 +275,7 @@ D. Privacy đạt tối đa tuyệt đối
 
 **Câu 38.** K-anonymity nghĩa là gì?
 
-A. Mọi dữ liệu phải bị xóa  
+A. Mọi dữ liệu phải bị xóa, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 B. Mỗi người có đúng k tài khoản  
 C. Mỗi dòng dữ liệu phải là duy nhất  
 D. Mỗi cá nhân không thể bị phân biệt với ít nhất k-1 cá nhân khác  
@@ -285,11 +285,11 @@ D. Mỗi cá nhân không thể bị phân biệt với ít nhất k-1 cá nhân
 A. Các cột không nhạy cảm riêng lẻ nhưng khi kết hợp có thể tái định danh  
 B. Các khóa mã hóa không thể phân tích  
 C. Các dashboard không có dữ liệu  
-D. Các cột luôn vô dụng  
+D. Các cột luôn vô dụng, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 
 **Câu 40.** Generalization trong K-anonymity là gì?
 
-A. Tăng Epsilon vô hạn  
+A. Tăng Epsilon vô hạn, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 B. Biến giá trị cụ thể thành khoảng/tổng quát hơn  
 C. Tạo bản sao dữ liệu  
 D. Xóa hẳn dòng dữ liệu dị biệt  
@@ -303,7 +303,7 @@ D. Biến 23 tuổi thành nhóm 20-30 tuổi
 
 **Câu 42.** Optimal Balance trong privacy nghĩa là gì?
 
-A. Không cần quan tâm privacy loss  
+A. Không cần quan tâm privacy loss, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Tối đa hóa utility bất kể lộ danh tính  
 C. Tối đa hóa privacy bất kể dữ liệu vô dụng  
 D. Cân bằng giữa tuân thủ bảo mật và giữ đủ độ chính xác cho Data Science  
@@ -314,14 +314,14 @@ D. Cân bằng giữa tuân thủ bảo mật và giữ đủ độ chính xác 
 
 A. Dữ liệu mở rộng quá nhanh, khó biết dữ liệu sạch nằm ở đâu  
 B. Dữ liệu chỉ còn một bảng duy nhất  
-C. Dữ liệu có lineage đầy đủ  
+C. Dữ liệu có lineage đầy đủ, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 D. Dữ liệu đã được catalog hoàn hảo  
 
 **Câu 44.** AI-driven Data Catalog làm gì?
 
 A. Chỉ lưu dữ liệu thô không phân loại  
 B. Tự động thu thập và phân loại metadata từ toàn bộ hệ thống  
-C. Chỉ tạo báo cáo bias  
+C. Chỉ tạo báo cáo bias, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Xóa metadata để giảm phức tạp  
 
 **Câu 45.** AI Catalog có thể tự động nhận diện loại cột nào để gắn nhãn bảo mật?
@@ -334,14 +334,14 @@ D. Chỉ cột không có dữ liệu
 **Câu 46.** Semantic Search trong AI Data Catalog cho phép gì?
 
 A. Xóa bảng không dùng  
-B. Mã hóa cột PII  
+B. Mã hóa cột PII, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 C. Chỉ tìm bằng tên bảng chính xác  
 D. Tìm bảng dữ liệu bằng ngôn ngữ tự nhiên  
 
 **Câu 47.** Trust Score trong Data Catalog đánh giá gì?
 
 A. Chất lượng bảng dựa trên tần suất sử dụng và lịch sử kiểm định chất lượng  
-B. Kích thước file PDF  
+B. Kích thước file PDF, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 C. Số lượng người đăng nhập  
 D. Mức độ đẹp của dashboard  
 
@@ -370,12 +370,12 @@ D. Data Engineer Layer
 
 A. Kiểu dữ liệu, schema, freshness, owner kỹ thuật  
 B. Quyết định vay vốn cuối cùng  
-C. Fairness constraints  
+C. Fairness constraints, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 D. Định nghĩa Churn nghiệp vụ duy nhất  
 
 **Câu 52.** Bản chất của Bias trong AI theo slide là gì?
 
-A. Bias không liên quan dữ liệu  
+A. Bias không liên quan dữ liệu, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Bias nằm trong dữ liệu lịch sử do con người thu thập, AI học và khuếch đại nó  
 C. Bias luôn làm mô hình chính xác hơn  
 D. AI tự sinh ra định kiến từ hư không  
@@ -390,7 +390,7 @@ D. Kết quả đầu ra sau dự báo
 **Câu 54.** In-processing để khử bias làm gì?
 
 A. Chỉ lấy mẫu lại dữ liệu Gold  
-B. Chỉ tạo audit trail  
+B. Chỉ tạo audit trail, va luon thay the hoan toan cac co che con lai trong kien truc  
 C. Chỉ đổi ngưỡng dự báo sau khi model chạy  
 D. Thêm Fairness Constraints trực tiếp vào Loss Function  
 
@@ -398,14 +398,14 @@ D. Thêm Fairness Constraints trực tiếp vào Loss Function
 
 A. Điều chỉnh kết quả đầu ra/ngưỡng quyết định cho từng nhóm  
 B. Thêm constraint vào loss function  
-C. Xóa metadata kỹ thuật  
+C. Xóa metadata kỹ thuật, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 D. Thay đổi dữ liệu Gold trước khi học  
 
 **Câu 56.** Human-in-the-loop yêu cầu gì?
 
 A. Chỉ áp dụng với dữ liệu không nhạy cảm  
 B. Quyết định cuối cùng ảnh hưởng quyền lợi công dân phải có con người phê duyệt  
-C. Không cần giải trình lý do  
+C. Không cần giải trình lý do, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. AI tự quyết mọi hồ sơ không cần người  
 
 **Câu 57.** Explainable AI yêu cầu mô hình không được như thế nào?
@@ -419,7 +419,7 @@ D. Không được có dữ liệu đầu vào
 
 **Câu 58.** Continuous Auditing khác audit truyền thống ở điểm nào?
 
-A. Không tạo báo cáo tuân thủ  
+A. Không tạo báo cáo tuân thủ, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 B. Không phát hiện hành vi bất thường  
 C. Chỉ kiểm toán hàng quý/hàng năm bằng con người  
 D. Theo dõi tự động hạ tầng dữ liệu theo thời gian thực 24/7  
@@ -435,7 +435,7 @@ D. Train, Validate, Test, Deploy
 
 A. Chỉ số doanh thu hàng tháng  
 B. Mức hao hụt ngân sách quyền riêng tư Epsilon theo thời gian  
-C. Số lượng bảng trong Bronze  
+C. Số lượng bảng trong Bronze, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Số lượng dashboard được xem  
 
 ## Đáp án và giải thích ngắn
@@ -500,3 +500,4 @@ D. Số lượng dashboard được xem
 58. D - Continuous auditing theo dõi real-time 24/7.
 59. A - Quy trình gồm Monitor, Detect, Alert, Report.
 60. B - Privacy Audit Trail theo dõi Epsilon privacy budget loss.
+

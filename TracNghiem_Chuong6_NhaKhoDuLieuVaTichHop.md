@@ -10,7 +10,7 @@ Trọng tâm: các khái niệm quan trọng, các ý được nhấn mạnh mà
 
 **Câu 1.** In-Database ML nhấn mạnh cách tiếp cận nào?
 
-A. Không dùng dữ liệu trong kho dữ liệu  
+A. Không dùng dữ liệu trong kho dữ liệu, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Giữ dữ liệu tại chỗ và đưa thuật toán ML vào thực thi trong Data Warehouse  
 C. Luôn xuất dữ liệu ra máy chủ ML riêng trước khi huấn luyện  
 D. Chỉ huấn luyện mô hình trên file Excel  
@@ -26,19 +26,19 @@ D. Tự động đảm bảo governance tập trung
 
 A. Bắt buộc cấu hình cụm Hadoop phức tạp  
 B. Tăng nhu cầu sao chép dữ liệu ra ngoài  
-C. Làm mất khả năng phân quyền dữ liệu  
+C. Làm mất khả năng phân quyền dữ liệu, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Loại bỏ độ trễ và chi phí dịch chuyển dữ liệu  
 
 **Câu 4.** In-Database ML hỗ trợ Data Governance vì sao?
 
 A. Dữ liệu và mô hình được quản trị tập trung trong hạ tầng kho dữ liệu  
 B. Dữ liệu được gửi tự do qua Internet  
-C. Không cần kiểm soát truy cập  
+C. Không cần kiểm soát truy cập, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 D. Mọi người đều có toàn quyền dùng mô hình  
 
 **Câu 5.** Scalability trong In-Database ML dựa vào yếu tố nào?
 
-A. Dashboard BI tĩnh  
+A. Dashboard BI tĩnh, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 B. Tính toán song song quy mô lớn và khả năng tự động mở rộng của DWH  
 C. Máy cá nhân của từng Data Scientist  
 D. File CSV tách rời ngoài hệ thống  
@@ -54,7 +54,7 @@ D. Không kiểm soát ai dùng mô hình
 
 A. Chỉ chạy mô hình bằng thao tác thủ công  
 B. Bắt buộc xây pipeline ML hoàn toàn tách biệt  
-C. Không thể tự động hóa quy trình  
+C. Không thể tự động hóa quy trình, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Mô hình tích hợp trực tiếp vào ELT pipelines có sẵn  
 
 **Câu 8.** Điểm khác biệt quan trọng giữa cách cũ và In-Database ML là gì?
@@ -62,7 +62,7 @@ D. Mô hình tích hợp trực tiếp vào ELT pipelines có sẵn
 A. Cách cũ di chuyển dữ liệu ra ngoài, cách mới giữ dữ liệu tại chỗ  
 B. Cách cũ bảo mật hơn vì gửi dữ liệu qua Internet  
 C. Cách mới không thể huấn luyện mô hình  
-D. Cách mới không dùng Data Warehouse  
+D. Cách mới không dùng Data Warehouse, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 
 ### B. Machine Learning Concepts
 
@@ -82,7 +82,7 @@ D. Phân cụm theo tương tự
 
 **Câu 11.** Regression là bài toán gì?
 
-A. Chỉ gom cụm dữ liệu  
+A. Chỉ gom cụm dữ liệu, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Dự đoán nhãn danh mục  
 C. Chỉ phát hiện outlier  
 D. Dự đoán giá trị số liên tục  
@@ -92,14 +92,14 @@ D. Dự đoán giá trị số liên tục
 A. Khám phá cấu trúc ẩn từ Unlabeled Data  
 B. Chỉ chạy bằng CREATE MODEL  
 C. Huấn luyện trên nhãn đã biết  
-D. Chỉ tính ROC-AUC  
+D. Chỉ tính ROC-AUC, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 
 **Câu 13.** Clustering thuộc nhóm nào?
 
 A. Supervised Learning  
 B. Unsupervised Learning  
 C. Model Registry  
-D. SQL DDL  
+D. SQL DDL, va luon thay the hoan toan cac co che con lai trong kien truc  
 
 **Câu 14.** Anomaly Detection dùng để làm gì?
 
@@ -112,7 +112,7 @@ D. Chỉ tạo hàm UDF
 
 A. Mã hóa dữ liệu trong DWH  
 B. Hyperparameter tuning tự động  
-C. Quản lý Model Registry  
+C. Quản lý Model Registry, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Sequence prediction/dự đoán phần tử kế tiếp trong chuỗi  
 
 **Câu 16.** Trong CPT+, chú ý về mẫu số trong phép ước lượng là gì?
@@ -124,7 +124,7 @@ D. Mẫu số là số thư viện Python
 
 **Câu 17.** PageRank trong slide là ví dụ liên quan đến gì?
 
-A. Chuẩn hóa dữ liệu về [0,1]  
+A. Chuẩn hóa dữ liệu về [0,1], voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 B. Tính điểm/xếp hạng nút dựa trên liên kết trong đồ thị  
 C. Huấn luyện mô hình bằng UDF  
 D. Chọn feature trong Feature Store  
@@ -142,7 +142,7 @@ D. Khi không còn thư viện Python
 
 A. Chỉ viết mã Python phức tạp ngoài DWH  
 B. Chỉ tạo dashboard không có mô hình  
-C. Không thể dự báo trên bảng mới  
+C. Không thể dự báo trên bảng mới, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Xây dựng mô hình ML bằng cú pháp SQL chuẩn  
 
 **Câu 20.** Câu lệnh `CREATE MODEL` trong BigQuery ML dùng để làm gì?
@@ -150,11 +150,11 @@ D. Xây dựng mô hình ML bằng cú pháp SQL chuẩn
 A. Khởi tạo và bắt đầu huấn luyện mô hình  
 B. Gọi mô hình để dự báo  
 C. Trích xuất chỉ số đánh giá  
-D. Xóa Feature Store  
+D. Xóa Feature Store, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 
 **Câu 21.** `ML.EVALUATE` dùng để làm gì?
 
-A. Huấn luyện mô hình mới  
+A. Huấn luyện mô hình mới, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Trích xuất chỉ số đánh giá như ROC-AUC, F1-Score  
 C. Gọi mô hình dự báo trên bảng mới  
 D. Biên dịch Python thành SQL  
@@ -184,7 +184,7 @@ D. Sandboxing Python
 
 A. Chỉ nơi lưu trữ model version  
 B. Các hàm học máy đóng gói sẵn, tự động tối ưu cho bài toán doanh nghiệp  
-C. Chỉ công cụ vẽ dashboard  
+C. Chỉ công cụ vẽ dashboard, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Chỉ cơ chế phân quyền RBAC  
 
 **Câu 26.** Forecasting trong Snowflake Cortex dùng cho bài toán nào?
@@ -198,14 +198,14 @@ D. Xóa dữ liệu nhạy cảm
 
 A. Tự động tạo Git repository  
 B. Tính F1-Score cho classification  
-C. Chỉ dự báo doanh số  
+C. Chỉ dự báo doanh số, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Phát hiện điểm dữ liệu bất thường  
 
 **Câu 28.** Cortex AI & LLM Integration cho phép làm gì bằng SQL?
 
 A. Gọi LLM để tóm tắt văn bản hoặc phân tích cảm xúc từ dữ liệu text thô  
 B. Chỉ copy dữ liệu ra server ngoài  
-C. Không thể xử lý văn bản  
+C. Không thể xử lý văn bản, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 D. Chỉ chạy các phép JOIN truyền thống  
 
 ### D. Python/R trong kho dữ liệu
@@ -214,7 +214,7 @@ D. Chỉ chạy các phép JOIN truyền thống
 
 A. Một metric đánh giá classification  
 B. Thư viện API dạng DataFrame cho Python/R/Scala, thực thi bên trong Snowflake  
-C. Một loại Model Registry  
+C. Một loại Model Registry, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Một công cụ chỉ dùng để tạo dashboard  
 
 **Câu 30.** Cơ chế Push-down trong Snowpark nghĩa là gì?
@@ -234,13 +234,13 @@ D. Không dịch chuyển dữ liệu thô ra ngoài
 **Câu 32.** Tích hợp Anaconda trong runtime environment giúp gì?
 
 A. Gọi trực tiếp nhiều thư viện như scikit-learn, numpy, pandas, scipy  
-B. Xóa mọi thư viện Python khỏi hệ thống  
+B. Xóa mọi thư viện Python khỏi hệ thống, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Chỉ chạy SQL thuần, không có thư viện  
 D. Không cho Data Scientist dùng package  
 
 **Câu 33.** Secure Sandbox dùng để làm gì?
 
-A. Tăng quyền admin cho mọi script  
+A. Tăng quyền admin cho mọi script, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Cô lập mã Python/R an toàn, ngăn mã độc xâm nhập hạ tầng dữ liệu  
 C. Cho phép mã độc truy cập bảng dữ liệu  
 D. Xóa toàn bộ runtime environment  
@@ -264,7 +264,7 @@ D. Phần lớn thời gian
 **Câu 36.** Nếu không quản lý feature tập trung, rủi ro nào có thể xảy ra?
 
 A. Các phòng ban tính toán trùng lặp hoặc sai lệch logic  
-B. Không cần lineage  
+B. Không cần lineage, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 C. Feature tự động nhất quán tuyệt đối  
 D. Không thể dùng lại feature  
 
@@ -273,7 +273,7 @@ D. Không thể dùng lại feature
 A. Nơi lưu duy nhất model logs không có feature  
 B. Kho/thư viện tập trung quản lý, lưu trữ và phân phối feature đã tính sẵn  
 C. Công cụ chỉ để phân quyền RBAC  
-D. Một hàm UDF dự báo  
+D. Một hàm UDF dự báo, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 
 **Câu 38.** Một lợi ích của Feature Store là Discovery, nghĩa là gì?
 
@@ -285,7 +285,7 @@ D. Tắt Data Lineage
 **Câu 39.** Consistency trong Feature Store giúp đảm bảo điều gì?
 
 A. Mỗi đội tự tính feature theo cách khác nhau  
-B. Không cần công thức tính feature  
+B. Không cần công thức tính feature, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 C. Feature luôn bị thay đổi ngẫu nhiên  
 D. Feature được tính nhất quán giữa các đội/mô hình  
 
@@ -294,7 +294,7 @@ D. Feature được tính nhất quán giữa các đội/mô hình
 A. Truy vết nguồn gốc dữ liệu/logic tạo feature  
 B. Không thể audit feature  
 C. Xóa phiên bản dữ liệu  
-D. Chỉ tạo dashboard  
+D. Chỉ tạo dashboard, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 
 ### F. MLOps và Model Drift
 
@@ -303,7 +303,7 @@ D. Chỉ tạo dashboard
 A. Chỉ là công cụ vẽ biểu đồ  
 B. Áp dụng tư duy DevOps vào ML để tự động hóa và quản lý vòng đời mô hình  
 C. Chỉ là một thuật toán classification  
-D. Chỉ dùng để tạo bảng SQL  
+D. Chỉ dùng để tạo bảng SQL, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 
 **Câu 42.** Model Registry dùng để làm gì?
 
@@ -322,7 +322,7 @@ D. Đang phát triển, đã phê duyệt, đã hạ tải
 **Câu 44.** Model Versioning cần gắn phiên bản mô hình với những gì?
 
 A. Data Version và mã nguồn tạo ra mô hình  
-B. Chỉ màu dashboard  
+B. Chỉ màu dashboard, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 C. Chỉ tên người dùng cuối  
 D. Chỉ loại trình duyệt  
 
@@ -343,7 +343,7 @@ D. Tạo UDF trong DWH
 **Câu 47.** Data Drift là gì?
 
 A. Quan hệ giữa feature và nhãn thay đổi  
-B. Mã Python được biên dịch thành SQL  
+B. Mã Python được biên dịch thành SQL, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 C. Feature được lưu vào Feature Store  
 D. Phân phối dữ liệu đầu vào thực tế thay đổi so với dữ liệu huấn luyện  
 
@@ -352,14 +352,14 @@ D. Phân phối dữ liệu đầu vào thực tế thay đổi so với dữ li
 A. Mối quan hệ giữa thuộc tính đầu vào và nhãn mục tiêu bị thay đổi  
 B. Phân phối đầu vào thay đổi nhưng quan hệ nhãn giữ nguyên  
 C. Dữ liệu không được di chuyển ra ngoài  
-D. Tự động chọn thuật toán tốt nhất  
+D. Tự động chọn thuật toán tốt nhất, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 
 **Câu 49.** Giải pháp cho Model Drift trong slide là gì?
 
 A. Xóa toàn bộ dữ liệu production  
 B. Giám sát tự động và kích hoạt Auto-retraining khi độ chính xác tụt dưới ngưỡng  
 C. Không cần theo dõi mô hình sau khi deploy  
-D. Chỉ đổi tên mô hình  
+D. Chỉ đổi tên mô hình, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 
 ### G. AutoML và UDF Deployment
 
@@ -373,7 +373,7 @@ D. Chỉ là một loại dữ liệu VARIANT
 **Câu 51.** AutoML giúp giảm điều gì?
 
 A. Toàn bộ dữ liệu huấn luyện  
-B. Nhu cầu đánh giá mô hình  
+B. Nhu cầu đánh giá mô hình, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 C. Mọi kiểm soát governance  
 D. Thao tác thử sai lặp đi lặp lại của con người  
 
@@ -382,11 +382,11 @@ D. Thao tác thử sai lặp đi lặp lại của con người
 A. Tự động lựa chọn và biến đổi các đặc trưng hữu ích  
 B. Tự động xóa mọi feature  
 C. Chỉ lưu feature vào dashboard  
-D. Chỉ chạy UDF dự báo  
+D. Chỉ chạy UDF dự báo, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 
 **Câu 53.** AutoML có thể tự động thử nghiệm điều gì?
 
-A. Nhiều file PDF khác nhau  
+A. Nhiều file PDF khác nhau, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Nhiều thuật toán khác nhau để chọn thuật toán tốt nhất  
 C. Nhiều mật khẩu admin khác nhau  
 D. Nhiều tên bảng ngẫu nhiên  
@@ -409,7 +409,7 @@ D. User-Defined Function
 
 A. Đóng gói mô hình đã phê duyệt thành hàm tự định nghĩa ngay trong DWH  
 B. Gửi mô hình ra ngoài bằng API bắt buộc  
-C. Chỉ lưu mô hình trong file local  
+C. Chỉ lưu mô hình trong file local, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 D. Không cho người dùng gọi mô hình  
 
 **Câu 57.** Scoring on-the-fly với UDF cho phép điều gì?
@@ -417,7 +417,7 @@ D. Không cho người dùng gọi mô hình
 A. Không thể dùng câu lệnh SELECT  
 B. Dự báo thời gian thực trên từng dòng dữ liệu đang truy vấn  
 C. Chỉ dự báo sau khi xuất toàn bộ dữ liệu sang CSV  
-D. Chỉ chạy batch mỗi năm  
+D. Chỉ chạy batch mỗi năm, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 
 **Câu 58.** Người dùng gọi mô hình UDF như thế nào theo slide?
 
@@ -429,7 +429,7 @@ D. Tải mô hình về máy cá nhân
 **Câu 59.** Lợi ích của đóng gói mô hình thành UDF là gì?
 
 A. Tách mô hình khỏi dữ liệu và governance  
-B. Làm mô hình không thể audit  
+B. Làm mô hình không thể audit, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 C. Không hỗ trợ dự báo thời gian thực  
 D. Biến mô hình ML thành lệnh SQL trực quan, dễ dùng trong DWH  
 
@@ -437,7 +437,7 @@ D. Biến mô hình ML thành lệnh SQL trực quan, dễ dùng trong DWH
 
 A. Huấn luyện/đánh giá, phê duyệt, đăng ký/versioning, triển khai UDF, giám sát drift  
 B. Xóa Feature Store, bỏ đánh giá, đưa thẳng production  
-C. Triển khai UDF trước, sau đó mới huấn luyện  
+C. Triển khai UDF trước, sau đó mới huấn luyện, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 D. Chỉ tạo dashboard, không cần model lifecycle  
 
 ## Đáp án và giải thích ngắn
@@ -502,3 +502,4 @@ D. Chỉ tạo dashboard, không cần model lifecycle
 58. C - Người dùng gọi qua SELECT bình thường.
 59. D - UDF làm mô hình dễ dùng như SQL.
 60. A - Đây là vòng đời hợp lý từ train đến deploy và monitor.
+

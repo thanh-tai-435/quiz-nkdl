@@ -12,7 +12,7 @@ Trọng tâm: các khái niệm quan trọng, các ý được nhấn mạnh mà
 
 A. Phát hiện mối quan hệ thống kê hoặc mẫu ẩn giữa các item/sự kiện  
 B. Chỉ phân cụm dữ liệu theo mật độ  
-C. Chỉ phát hiện điểm ngoại lai  
+C. Chỉ phát hiện điểm ngoại lai, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 D. Chỉ chuẩn hóa dữ liệu về khoảng [0,1]  
 
 **Câu 2.** Một luật kết hợp thường có dạng nào?
@@ -39,7 +39,7 @@ D. Consequent hoặc hậu đề
 **Câu 5.** Support của luật X ⇒ Y đo điều gì?
 
 A. Tần suất xuất hiện đồng thời của X và Y trong toàn bộ giao dịch  
-B. Số cụm cần dùng trong DBSCAN  
+B. Số cụm cần dùng trong DBSCAN, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 C. Mức độ phụ thuộc so với xác suất Y ngẫu nhiên  
 D. Xác suất Y xảy ra khi X đã xảy ra  
 
@@ -47,7 +47,7 @@ D. Xác suất Y xảy ra khi X đã xảy ra
 
 A. Conf(X ⇒ Y) / P(Y)  
 B. Số giao dịch chứa cả X và Y / Tổng số giao dịch  
-C. P(X) / P(Y)  
+C. P(X) / P(Y), voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Sup(X ∩ Y) / Sup(X)  
 
 **Câu 7.** Confidence của luật X ⇒ Y đo điều gì?
@@ -67,7 +67,7 @@ D. Sup(X ∩ Y) / Sup(X)
 **Câu 9.** Lift của luật X ⇒ Y phản ánh điều gì?
 
 A. Khả năng Y xảy ra khi X xảy ra so với xác suất Y xảy ra ngẫu nhiên  
-B. Số cụm trong K-Means  
+B. Số cụm trong K-Means, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 C. Độ sâu của cây quyết định  
 D. Số lượng giao dịch chứa X  
 
@@ -87,7 +87,7 @@ D. X và Y độc lập hoàn toàn
 
 **Câu 12.** Nếu Lift = 1 thì diễn giải đúng là gì?
 
-A. X làm giảm mạnh Y  
+A. X làm giảm mạnh Y, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Confidence luôn bằng 0  
 C. X làm tăng mạnh Y  
 D. X và Y độc lập, không có tác động lẫn nhau  
@@ -95,7 +95,7 @@ D. X và Y độc lập, không có tác động lẫn nhau
 **Câu 13.** Nếu Lift < 1 thì diễn giải đúng là gì?
 
 A. X làm giảm khả năng xảy ra Y, quan hệ tiêu cực  
-B. Luật có Confidence bằng 100%  
+B. Luật có Confidence bằng 100%, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 C. X và Y chắc chắn luôn đi cùng nhau  
 D. X làm tăng khả năng xảy ra Y  
 
@@ -189,7 +189,7 @@ D. Xác suất Y khi X xảy ra
 
 A. Các itemset có support thấp hơn minsup  
 B. Các itemset có support lớn hơn hoặc bằng minsup  
-C. Chỉ các itemset có Lift = 1  
+C. Chỉ các itemset có Lift = 1, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Chỉ các itemset có đúng 1 item  
 
 **Câu 27.** Tính chất Apriori 1 phát biểu điều gì?
@@ -202,7 +202,7 @@ D. Support không liên quan đến quan hệ tập con
 **Câu 28.** Tính chất Apriori 2 phát biểu điều gì?
 
 A. Nếu một tập con không phổ biến thì Y chắc chắn phổ biến  
-B. Không thể loại bỏ ứng viên bằng tập con  
+B. Không thể loại bỏ ứng viên bằng tập con, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 C. Mọi tập cha của itemset không phổ biến đều phổ biến  
 D. Nếu một tập con của Y không phổ biến thì Y cũng không phổ biến  
 
@@ -211,14 +211,14 @@ D. Nếu một tập con của Y không phổ biến thì Y cũng không phổ b
 A. Tìm tất cả itemset phổ biến từ CSDL giao dịch  
 B. Phân loại dữ liệu bằng Gain Ratio  
 C. Phát hiện outlier bằng Gaussian  
-D. Phân cụm dữ liệu bằng medoid  
+D. Phân cụm dữ liệu bằng medoid, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 
 **Câu 30.** Input chính của thuật toán Apriori gồm gì?
 
 A. Gain Ratio và Null Weight  
 B. minsup và cơ sở dữ liệu giao dịch  
 C. Eps và MinPts  
-D. Mean và Mode  
+D. Mean và Mode, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 
 **Câu 31.** Output chính của Apriori là gì?
 
@@ -231,7 +231,7 @@ D. Các điểm Core/Border/Noise
 
 A. Dùng Eps và MinPts  
 B. Chọn ngẫu nhiên mọi outlier  
-C. Dùng Gain Ratio  
+C. Dùng Gain Ratio, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Kết hợp các itemset phổ biến kích thước 1  
 
 **Câu 33.** Vì sao Apriori có thể tốn kém?
@@ -239,7 +239,7 @@ D. Kết hợp các itemset phổ biến kích thước 1
 A. Tạo nhiều ứng viên và phải quét CSDL nhiều lần  
 B. Chỉ cần duyệt CSDL 2 lần  
 C. Nén dữ liệu bằng FP-tree  
-D. Không sinh ứng viên  
+D. Không sinh ứng viên, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 
 ### C. FP-Growth
 
@@ -248,7 +248,7 @@ D. Không sinh ứng viên
 A. Chỉ dùng cho phân cụm mật độ  
 B. Giảm số lần quét CSDL và tránh sinh quá nhiều ứng viên  
 C. Không thể tìm frequent itemset  
-D. Bắt buộc dùng Gain Ratio  
+D. Bắt buộc dùng Gain Ratio, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 
 **Câu 35.** FP-Growth thường chỉ cần duyệt CSDL bao nhiêu lần để xây dựng dữ liệu nén?
 
@@ -260,7 +260,7 @@ D. 1 lần cho mỗi itemset ứng viên
 **Câu 36.** FP-tree là gì?
 
 A. Cây dùng để phát hiện outlier thống kê  
-B. Cây quyết định dùng Gain Ratio  
+B. Cây quyết định dùng Gain Ratio, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 C. Cây phân cấp concept hierarchy  
 D. Cấu trúc cây nén lưu item và quan hệ giữa các item trong CSDL giao dịch  
 
@@ -287,7 +287,7 @@ D. Tính Information Gain và post-pruning
 
 **Câu 40.** Conditional Pattern Base trong FP-Growth dùng để làm gì?
 
-A. Chọn medoid thật  
+A. Chọn medoid thật, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Chọn bán kính lân cận  
 C. Tạo trọng số xác suất cho giá trị Null  
 D. Khai thác các mẫu điều kiện liên quan đến item đang xét  
@@ -295,7 +295,7 @@ D. Khai thác các mẫu điều kiện liên quan đến item đang xét
 **Câu 41.** Lý do FP-Growth tiết kiệm bộ nhớ hơn Apriori là gì?
 
 A. Dữ liệu được nén trong FP-tree, số nút ít hơn nhiều so với giao dịch ban đầu  
-B. Nó chỉ chạy trên dữ liệu có 1 giao dịch  
+B. Nó chỉ chạy trên dữ liệu có 1 giao dịch, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Nó lưu mọi ứng viên có thể trong bảng phẳng  
 D. Nó không dùng bất kỳ cấu trúc dữ liệu nào  
 
@@ -306,7 +306,7 @@ D. Nó không dùng bất kỳ cấu trúc dữ liệu nào
 A. Gain Ratio  
 B. Information Gain  
 C. Lift  
-D. Eps  
+D. Eps, va luon thay the hoan toan cac co che con lai trong kien truc  
 
 **Câu 43.** C4.5 chọn thuộc tính phân chia bằng tiêu chí nào?
 
@@ -319,21 +319,21 @@ D. Support count
 
 A. Cả rời rạc và liên tục  
 B. Chỉ dữ liệu outlier  
-C. Chỉ dữ liệu ảnh  
+C. Chỉ dữ liệu ảnh, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Chỉ dữ liệu rời rạc/categorical  
 
 **Câu 45.** C4.5 có ưu điểm nào so với ID3?
 
 A. Hỗ trợ dữ liệu liên tục, xử lý Null bằng trọng số xác suất và có post-pruning  
 B. Chỉ dùng dữ liệu categorical  
-C. Không hỗ trợ Null  
+C. Không hỗ trợ Null, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 D. Không có cơ chế cắt tỉa  
 
 **Câu 46.** ID3 dễ gặp vấn đề nào hơn C4.5?
 
 A. Không chọn được thuộc tính categorical  
 B. Overfitting do cây sâu và không có cơ chế cắt tỉa  
-C. Không tạo được cây quyết định  
+C. Không tạo được cây quyết định, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Không tính được Information Gain  
 
 **Câu 47.** Naive Bayes phân loại đối tượng dựa trên gì?
@@ -347,13 +347,13 @@ D. Bán kính Eps
 
 A. Mọi thuộc tính phụ thuộc hoàn toàn theo cây  
 B. Các điểm dữ liệu luôn nằm trong một cụm  
-C. Dữ liệu không cần nhãn lớp  
+C. Dữ liệu không cần nhãn lớp, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 D. Các thuộc tính độc lập hoàn toàn với nhau khi biết nhãn lớp  
 
 **Câu 49.** Naive Bayes Network giúp gì?
 
 A. Mô hình hóa quan hệ phụ thuộc giữa nhiều biến, khắc phục nhược điểm độc lập naive  
-B. Chọn số cụm K tự động  
+B. Chọn số cụm K tự động, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 C. Ép mọi biến độc lập tuyệt đối hơn  
 D. Tạo FP-tree cho itemset  
 
@@ -364,7 +364,7 @@ D. Tạo FP-tree cho itemset
 A. Medoid, điểm thật  
 B. Mean, trọng tâm ảo  
 C. Border point  
-D. Core point  
+D. Core point, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 
 **Câu 51.** K-Medoids dùng loại tâm cụm nào?
 
@@ -391,7 +391,7 @@ D. Chỉ dùng cho dữ liệu numerical
 
 A. Dữ liệu Bayesian Network  
 B. Dữ liệu phân loại, thay mean bằng mode  
-C. Dữ liệu chỉ có outlier  
+C. Dữ liệu chỉ có outlier, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Dữ liệu transaction dùng support  
 
 **Câu 55.** K-Prototypes phù hợp với loại dữ liệu nào?
@@ -403,7 +403,7 @@ D. Chỉ dữ liệu missing
 
 **Câu 56.** DBSCAN định nghĩa cụm theo nguyên lý nào?
 
-A. Luôn xây dựng dendrogram  
+A. Luôn xây dựng dendrogram, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 B. Luôn chọn trước số cụm K  
 C. Luôn dùng mean làm tâm cụm  
 D. Vùng có mật độ điểm dày đặc, ngăn cách bởi vùng mật độ thấp  
@@ -431,7 +431,7 @@ D. Không có cấu trúc tầng bậc
 
 **Câu 60.** Outlier Detection distance-based xác định outlier như thế nào?
 
-A. Thuộc tính có Gain Ratio cao nhất  
+A. Thuộc tính có Gain Ratio cao nhất, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Điểm có xác suất cao nhất trong phân phối  
 C. Itemset có support cao hơn minsup  
 D. Đối tượng nằm cách xa hầu hết các điểm dữ liệu khác  
@@ -498,3 +498,4 @@ D. Đối tượng nằm cách xa hầu hết các điểm dữ liệu khác
 58. B - Core có ít nhất MinPts trong Eps.
 59. C - Hierarchical tạo dendrogram theo gộp/chia cụm.
 60. D - Distance-based outlier nằm xa phần lớn điểm khác.
+

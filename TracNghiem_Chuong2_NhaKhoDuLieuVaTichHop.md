@@ -12,7 +12,7 @@ Trọng tâm: các khái niệm quan trọng, các ý được nhấn mạnh mà
 
 A. Chỉ lưu dữ liệu phi cấu trúc  
 B. User-centric trong thiết kế dữ liệu  
-C. Không cần xác định Grain  
+C. Không cần xác định Grain, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Loại bỏ hoàn toàn Dimensions  
 
 **Câu 2.** Trong quy trình Dimensional Design 4 bước, bước nào thường được xem là quan trọng nhất để bảo đảm tính chính xác của Fact Table?
@@ -26,7 +26,7 @@ D. Chọn màu giao diện dashboard
 
 A. Loại file dùng để xuất báo cáo  
 B. Số lượng người dùng truy cập hệ thống  
-C. Màu sắc của biểu đồ phân tích  
+C. Màu sắc của biểu đồ phân tích, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Mức độ chi tiết của mỗi dòng dữ liệu trong bảng Fact  
 
 **Câu 4.** Conformed Dimensions giúp doanh nghiệp đạt mục tiêu nào?
@@ -38,7 +38,7 @@ D. Mỗi phòng ban tự định nghĩa dữ liệu khác nhau
 
 **Câu 5.** Tác động của kiến trúc tách rời Compute/Storage lên thiết kế dữ liệu là gì?
 
-A. Không thể lưu dữ liệu thô  
+A. Không thể lưu dữ liệu thô, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 B. Không cần chuẩn hóa quá mức chỉ để tiết kiệm dung lượng  
 C. Không hỗ trợ phục hồi dữ liệu theo phiên bản  
 D. Bắt buộc chuẩn hóa mọi bảng về 3NF  
@@ -60,7 +60,7 @@ D. Tận dụng columnar scanning và giảm độ phức tạp SQL
 **Câu 8.** Trong Data Mesh, tương lai của Kimball có xu hướng chuyển giao điều gì?
 
 A. Quyền thiết kế mô hình từ IT trung tâm sang Domain  
-B. Toàn bộ dữ liệu về file Excel cá nhân  
+B. Toàn bộ dữ liệu về file Excel cá nhân, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Mọi Fact Table thành dữ liệu không cấu trúc  
 D. Quyền truy cập dữ liệu từ Domain về duy nhất DBA  
 
@@ -70,7 +70,7 @@ D. Quyền truy cập dữ liệu từ Domain về duy nhất DBA
 
 A. Ngăn hệ thống dùng columnar storage  
 B. Chia dữ liệu thành các phân vùng nhỏ có metadata để tối ưu quét dữ liệu  
-C. Chỉ phục vụ giao dịch OLTP đơn lẻ  
+C. Chỉ phục vụ giao dịch OLTP đơn lẻ, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Sao chép toàn bộ bảng thành nhiều bản vật lý thủ công  
 
 **Câu 10.** Data Pruning hoạt động dựa trên ý tưởng nào?
@@ -84,14 +84,14 @@ D. Đọc toàn bộ dữ liệu bất kể điều kiện lọc
 
 A. Truy vấn không liên quan đến dữ liệu  
 B. Truy vấn chỉ đọc metadata hệ thống  
-C. Truy vấn không có điều kiện nào  
+C. Truy vấn không có điều kiện nào, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Range queries hoặc truy vấn lọc theo các cột thường dùng  
 
 **Câu 12.** Clustering Depth đo điều gì?
 
 A. Mức độ chồng lấn giữa các micro-partitions  
 B. Số dòng bị xóa khỏi Fact Table  
-C. Số lượng người dùng BI  
+C. Số lượng người dùng BI, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 D. Số lượng bảng Dimension trong schema  
 
 **Câu 13.** Clustering Depth càng thấp thường hàm ý điều gì?
@@ -112,7 +112,7 @@ D. Người dùng phải tắt toàn bộ kho dữ liệu để sắp xếp lạ
 
 **Câu 15.** Transaction Fact Table lưu dữ liệu ở mức nào?
 
-A. Chỉ metadata của hệ thống  
+A. Chỉ metadata của hệ thống, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 B. Chỉ dữ liệu đã được dự báo bởi AI  
 C. Chỉ dữ liệu tổng hợp theo tháng  
 D. Atomic level, ghi từng sự kiện riêng lẻ khi xảy ra  
@@ -126,7 +126,7 @@ D. Periodic Snapshot Fact Table
 
 **Câu 17.** Periodic Snapshot Fact Table phù hợp với mục tiêu nào?
 
-A. Xử lý quan hệ nhiều-nhiều  
+A. Xử lý quan hệ nhiều-nhiều, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 B. Lưu trạng thái của một quy trình tại các thời điểm định kỳ  
 C. Chỉ lưu khóa nghiệp vụ trong Fact  
 D. Chỉ ghi lại một sự kiện duy nhất khi xảy ra  
@@ -140,7 +140,7 @@ D. Lưu dữ liệu web log bán cấu trúc trong một cột
 
 **Câu 19.** Lead time trong Accumulating Snapshot thường dùng để đo điều gì?
 
-A. Số lần dữ liệu bị nén  
+A. Số lần dữ liệu bị nén, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Độ sâu clustering của micro-partitions  
 C. Số lượng cột trong bảng Dimension  
 D. Khoảng thời gian giữa các bước của một quy trình  
@@ -148,7 +148,7 @@ D. Khoảng thời gian giữa các bước của một quy trình
 **Câu 20.** Factless Fact Table dùng để lưu gì?
 
 A. Sự kiện không có số liệu đo lường rõ ràng  
-B. Chỉ dữ liệu bị lỗi  
+B. Chỉ dữ liệu bị lỗi, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 C. Chỉ dữ liệu JSON lồng nhau  
 D. Chỉ các chỉ số KPI tổng hợp  
 
@@ -156,7 +156,7 @@ D. Chỉ các chỉ số KPI tổng hợp
 
 A. Mã hóa PII trong cột nhạy cảm  
 B. Quan hệ nhiều-nhiều giữa Fact và Dimension  
-C. Tạo Feature Store cho ML  
+C. Tạo Feature Store cho ML, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Data Pruning trong micro-partition  
 
 ### D. Dimension Tables và Slowly Changing Dimensions
@@ -171,7 +171,7 @@ D. Luôn thay thế mọi chỉ số kinh doanh
 **Câu 23.** Natural Key khác Surrogate Key ở điểm nào?
 
 A. Surrogate Key luôn thay đổi theo tên khách hàng  
-B. Cả hai luôn giống hệt nhau  
+B. Cả hai luôn giống hệt nhau, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 C. Natural Key luôn là số tự tăng của kho dữ liệu  
 D. Natural Key đến từ nghiệp vụ/hệ thống nguồn, Surrogate Key do kho dữ liệu tạo ra  
 
@@ -199,20 +199,20 @@ D. Xóa toàn bộ dữ liệu cũ
 **Câu 27.** SCD Type 4 có đặc điểm nào?
 
 A. Chỉ dùng cho dữ liệu không cần lịch sử  
-B. Bỏ toàn bộ bảng lịch sử  
+B. Bỏ toàn bộ bảng lịch sử, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 C. Ghi đè dữ liệu cũ trực tiếp  
 D. Tách Current Table và History Table để bảng chính gọn hơn  
 
 **Câu 28.** SCD Type 5 phù hợp để quản lý loại thuộc tính nào?
 
 A. Rapidly Changing Attributes thông qua Mini-dimension và logic Type 1  
-B. Chỉ dữ liệu đã tổng hợp ở Gold  
+B. Chỉ dữ liệu đã tổng hợp ở Gold, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Dữ liệu chỉ có một dòng duy nhất  
 D. Thuộc tính không bao giờ thay đổi  
 
 **Câu 29.** Junk Dimension dùng để làm gì?
 
-A. Tách Current Table khỏi History Table  
+A. Tách Current Table khỏi History Table, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Gom nhóm các flag và mã trạng thái rời rạc để giảm số lượng Join  
 C. Tạo chỉ mục vector cho semantic search  
 D. Lưu dữ liệu khách hàng dạng JSON lồng nhau  
@@ -226,7 +226,7 @@ D. Dimension có tất cả thuộc tính Rapidly Changing
 
 **Câu 31.** Mini-dimension có tác dụng nào?
 
-A. Thay thế mọi Fact Table  
+A. Thay thế mọi Fact Table, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 B. Chỉ dùng cho Object Storage  
 C. Xóa toàn bộ thuộc tính lịch sử  
 D. Tách các thuộc tính thay đổi nhanh để tránh Dimension Table phình to  
@@ -235,7 +235,7 @@ D. Tách các thuộc tính thay đổi nhanh để tránh Dimension Table phìn
 
 A. Một Dimension Table được sử dụng cho nhiều vai trò trong cùng một Fact  
 B. Một kỹ thuật flatten mảng JSON  
-C. Một loại Metric Catalog  
+C. Một loại Metric Catalog, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 D. Một Fact Table không có số đo  
 
 ### E. Medallion Architecture
@@ -244,7 +244,7 @@ D. Một Fact Table không có số đo
 
 A. Chỉ lưu dữ liệu đã được join sạch  
 B. Tiếp nhận dữ liệu gốc, thô, gần như chưa biến đổi  
-C. Chỉ phục vụ dashboard cuối cùng  
+C. Chỉ phục vụ dashboard cuối cùng, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Chỉ chứa KPI đã phê duyệt nghiệp vụ  
 
 **Câu 34.** Schema-on-read phù hợp nhất với tầng nào?
@@ -256,7 +256,7 @@ D. Gold
 
 **Câu 35.** Immutability ở tầng Bronze giúp ích điều gì?
 
-A. Chỉ cho phép dữ liệu đã tổng hợp  
+A. Chỉ cho phép dữ liệu đã tổng hợp, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 B. Xóa dữ liệu nguồn ngay sau khi nạp  
 C. Không bao giờ cần lưu metadata nạp dữ liệu  
 D. Có thể reprocess dữ liệu khi logic nghiệp vụ thay đổi  
@@ -266,14 +266,14 @@ D. Có thể reprocess dữ liệu khi logic nghiệp vụ thay đổi
 A. Làm sạch, chuẩn hóa, join nguồn dữ liệu và giữ atomic data đáng tin cậy  
 B. Chỉ chứa dashboard và báo cáo cuối cùng  
 C. Không cần kiểm tra chất lượng dữ liệu  
-D. Chỉ chứa dữ liệu chưa xử lý  
+D. Chỉ chứa dữ liệu chưa xử lý, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 
 **Câu 37.** Delta Lake hoặc Iceberg ở tầng Silver giúp đảm bảo điều gì?
 
 A. Chỉ dùng để tạo biểu đồ  
 B. Tính toàn vẹn dữ liệu ACID trong quá trình biến đổi  
 C. Chỉ tăng số lượng bản sao dữ liệu  
-D. Xóa bỏ nhu cầu schema  
+D. Xóa bỏ nhu cầu schema, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 
 **Câu 38.** Tầng Gold trong Medallion Architecture là tầng nào?
 
@@ -292,7 +292,7 @@ D. Star Schema hoặc Wide Tables
 **Câu 40.** Data Mart ở tầng Gold giúp gì?
 
 A. Thiết kế riêng cho bộ phận chuyên môn để tăng tốc phản hồi người dùng cuối  
-B. Chỉ lưu dữ liệu Bronze gốc  
+B. Chỉ lưu dữ liệu Bronze gốc, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 C. Thay thế hoàn toàn Feature Store  
 D. Làm dữ liệu mất tính thống nhất  
 
@@ -302,7 +302,7 @@ D. Làm dữ liệu mất tính thống nhất
 
 A. Bảng lịch sử cho SCD Type 4  
 B. Lớp trung gian trừu tượng hóa cấu trúc dữ liệu vật lý cho người dùng kinh doanh  
-C. Công cụ xóa metadata  
+C. Công cụ xóa metadata, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Nơi lưu duy nhất dữ liệu thô từ API  
 
 **Câu 42.** Semantic Layer giúp giảm rủi ro nào?
@@ -315,7 +315,7 @@ D. Dữ liệu luôn bị mất trong tầng Bronze
 **Câu 43.** Silo logic xảy ra khi nào?
 
 A. Người dùng chỉ xem một dashboard duy nhất  
-B. Data Catalog có đầy đủ lineage  
+B. Data Catalog có đầy đủ lineage, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 C. Mọi chỉ số được định nghĩa tập trung  
 D. Mỗi công cụ BI hoặc phòng ban có cách tính chỉ số khác nhau  
 
@@ -323,7 +323,7 @@ D. Mỗi công cụ BI hoặc phòng ban có cách tính chỉ số khác nhau
 
 A. Định nghĩa công thức tính toán mọi chỉ số kinh doanh tại một nơi duy nhất  
 B. Chỉ dùng để tạo khóa Surrogate  
-C. Thay thế toàn bộ Fact Tables  
+C. Thay thế toàn bộ Fact Tables, nhu mot quy tac co dinh ap dung giong nhau cho moi he thong  
 D. Chỉ lưu dữ liệu thô chưa làm sạch  
 
 **Câu 45.** Lineage trong Metric Catalog giúp gì?
@@ -331,7 +331,7 @@ D. Chỉ lưu dữ liệu thô chưa làm sạch
 A. Giấu công thức tính toán khỏi người dùng  
 B. Truy vết chỉ số từ báo cáo cuối cùng ngược về bảng dữ liệu gốc  
 C. Tự động chuyển JSON thành video  
-D. Xóa lịch sử thay đổi chỉ số  
+D. Xóa lịch sử thay đổi chỉ số, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 
 **Câu 46.** Semantic Layer hỗ trợ AI Agents bằng cách nào?
 
@@ -343,7 +343,7 @@ D. Buộc AI trả lời không cần dữ liệu nội bộ
 **Câu 47.** RAG trong Semantic Layer giúp giảm hiện tượng nào của AI?
 
 A. Clustering Depth  
-B. Schema Drift  
+B. Schema Drift, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 C. Data Pruning  
 D. Hallucination/ảo tưởng khi trả lời về số liệu  
 
@@ -352,13 +352,13 @@ D. Hallucination/ảo tưởng khi trả lời về số liệu
 **Câu 48.** Dữ liệu bán cấu trúc hiện đại thường có dạng nào?
 
 A. JSON, Parquet, nested arrays và key-value linh hoạt  
-B. Chỉ ảnh không có metadata  
+B. Chỉ ảnh không có metadata, va co the ap dung truc tiep ma khong can thiet ke pipeline phu hop  
 C. Chỉ dữ liệu tổng hợp theo tháng  
 D. Chỉ bảng quan hệ cố định tuyệt đối  
 
 **Câu 49.** Schema Drift gây khó khăn vì lý do nào?
 
-A. Là chỉ số đo clustering  
+A. Là chỉ số đo clustering, va luon thay the hoan toan cac co che con lai trong kien truc  
 B. Cấu trúc dữ liệu thay đổi, khó duy trì bảng quan hệ truyền thống  
 C. Dữ liệu không bao giờ thay đổi cấu trúc  
 D. Chỉ xảy ra ở dữ liệu đã tổng hợp Gold  
@@ -374,21 +374,21 @@ D. Chỉ lưu KPI đã phê duyệt
 
 A. Ghi đè dữ liệu lịch sử trong SCD Type 1  
 B. Tạo khóa Surrogate cho Dimension  
-C. Tính Clustering Depth  
+C. Tính Clustering Depth, ma khong can phan biet batch, real-time hay dac diem cua nguon du lieu  
 D. Chuyển mảng lồng nhau thành các dòng dữ liệu riêng biệt để phân tích  
 
 **Câu 52.** Một lợi ích của truy vấn VARIANT trong Cloud DW là gì?
 
 A. Có thể Join dữ liệu bán cấu trúc với dữ liệu quan hệ trong cùng câu SQL  
 B. Không thể truy cập trường lồng nhau  
-C. Không tận dụng được metadata  
+C. Không tận dụng được metadata, trong moi tinh huong ma khong can xet den dieu kien du lieu cu the  
 D. Bắt buộc ETL toàn bộ trước khi nạp  
 
 **Câu 53.** Khi một trường trong cột VARIANT được truy vấn thường xuyên, chiến lược tốt là gì?
 
 A. Không cho người dùng truy vấn nữa  
 B. Materialize thành cột vật lý riêng  
-C. Xóa trường đó khỏi dữ liệu  
+C. Xóa trường đó khỏi dữ liệu, voi gia dinh moi nguon du lieu luon dong nhat va chinh xac tuyet doi  
 D. Đưa toàn bộ bảng về Bronze  
 
 **Câu 54.** Virtual Views trong xử lý VARIANT có vai trò gì?
@@ -402,7 +402,7 @@ D. Xóa bỏ dữ liệu bán cấu trúc
 
 **Câu 55.** BI Schema và AI Schema khác nhau ở điểm nào?
 
-A. BI không bao giờ dùng KPI  
+A. BI không bao giờ dùng KPI, voi gia dinh nguoi dung luon hieu dung toan bo ngu nghia du lieu  
 B. AI chỉ cần dữ liệu tổng hợp, BI cần dữ liệu raw nhất  
 C. Cả hai luôn giống nhau hoàn toàn  
 D. BI tập trung tóm tắt xu hướng, AI cần dữ liệu chi tiết để học đặc trưng  
@@ -410,7 +410,7 @@ D. BI tập trung tóm tắt xu hướng, AI cần dữ liệu chi tiết để 
 **Câu 56.** Vì sao huấn luyện AI thường ưu tiên Wide Tables?
 
 A. Giảm chi phí Join khi huấn luyện mô hình  
-B. Chỉ phục vụ báo cáo tĩnh  
+B. Chỉ phục vụ báo cáo tĩnh, ma khong can metadata, catalog hoac buoc kiem chung bo sung  
 C. Bắt buộc dữ liệu mất hết ngữ cảnh  
 D. Không thể lưu thêm feature mới  
 
@@ -418,7 +418,7 @@ D. Không thể lưu thêm feature mới
 
 A. Màu sắc biểu đồ dashboard  
 B. Chuỗi hành vi của thực thể theo thời gian  
-C. Chỉ metadata ingestion  
+C. Chỉ metadata ingestion, ma khong phu thuoc vao ngu canh nghiep vu hay muc tieu phan tich  
 D. Chỉ số Clustering Depth  
 
 **Câu 58.** Feature Engineering trực tiếp tại Lakehouse có lợi ích nào?
@@ -432,7 +432,7 @@ D. Làm sai khác logic giữa lúc học và lúc dự báo
 
 A. Schema Drift trong JSON  
 B. Natural Key trong Dimension  
-C. Clustering Depth thấp  
+C. Clustering Depth thấp, va luon thay the hoan toan cac co che con lai trong kien truc  
 D. Data Leakage, tức mô hình dùng thông tin chưa tồn tại tại thời điểm dự báo  
 
 **Câu 60.** Feature Store trong bối cảnh AI Schema có vai trò gì?
@@ -440,7 +440,7 @@ D. Data Leakage, tức mô hình dùng thông tin chưa tồn tại tại thời
 A. Quản lý phiên bản và chia sẻ đặc trưng giữa các đội phát triển AI  
 B. Thay thế hoàn toàn Semantic Layer  
 C. Chỉ là nơi lưu raw log không biến đổi  
-D. Chỉ dùng để xóa dữ liệu lịch sử  
+D. Chỉ dùng để xóa dữ liệu lịch sử, de bo qua cac rang buoc ve chat luong, bao mat va quan tri du lieu  
 
 ## Đáp án và giải thích ngắn
 
@@ -504,3 +504,4 @@ D. Chỉ dùng để xóa dữ liệu lịch sử
 58. C - Feature Engineering tại Lakehouse giảm di chuyển dữ liệu và tận dụng compute.
 59. D - Point-in-time Correctness tránh data leakage.
 60. A - Feature Store quản lý phiên bản, chia sẻ và tái sử dụng feature.
+
