@@ -10,6 +10,11 @@
   --border: #d6e1e8;
   --primary: #126a72;
   --primary-strong: #0b4f56;
+  --button-text: #ffffff;
+  --secondary-bg: #dfeaf0;
+  --secondary-hover: #cbdde7;
+  --ghost-text: #0b4f56;
+  --ghost-hover: #e8f2f5;
   --accent: #b55f21;
   --success: #18784d;
   --danger: #b42318;
@@ -28,6 +33,11 @@ body.dark {
   --border: #303b46;
   --primary: #3aa6a3;
   --primary-strong: #58beb9;
+  --button-text: #071315;
+  --secondary-bg: #2b3742;
+  --secondary-hover: #354653;
+  --ghost-text: #8ee3de;
+  --ghost-hover: #202b34;
   --accent: #f0a35a;
   --success: #50c878;
   --danger: #ff7b72;
@@ -59,7 +69,7 @@ button {
   border: 0;
   border-radius: 8px;
   background: var(--primary);
-  color: #fff;
+  color: var(--button-text);
   cursor: pointer;
   font-weight: 700;
   padding: 10px 14px;
@@ -75,18 +85,31 @@ button:disabled {
 }
 
 button.secondary {
-  background: #dfeaf0;
+  background: var(--secondary-bg);
   color: var(--text);
 }
 
 button.secondary:hover {
-  background: #cbdde7;
+  background: var(--secondary-hover);
 }
 
 button.ghost {
   background: transparent;
-  color: var(--primary-strong);
+  color: var(--ghost-text);
   border: 1px solid var(--border);
+}
+
+button.ghost:hover {
+  background: var(--ghost-hover);
+  border-color: var(--primary);
+}
+
+body.dark button {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+body.dark button:disabled {
+  opacity: 0.45;
 }
 
 .app-shell {
@@ -145,7 +168,7 @@ h1 {
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
 }
 
 .theme-toggle:hover {
@@ -320,17 +343,32 @@ select {
 
 .option.selected {
   border-color: var(--primary);
-  background: color-mix(in srgb, var(--primary) 14%, var(--surface));
+  background: color-mix(in srgb, var(--primary) 18%, var(--surface));
 }
 
 .option.correct {
   border-color: var(--success);
-  background: color-mix(in srgb, var(--success) 14%, var(--surface));
+  background: color-mix(in srgb, var(--success) 18%, var(--surface));
 }
 
 .option.wrong {
   border-color: var(--danger);
-  background: color-mix(in srgb, var(--danger) 13%, var(--surface));
+  background: color-mix(in srgb, var(--danger) 17%, var(--surface));
+}
+
+body.dark .option.selected {
+  background: color-mix(in srgb, var(--primary) 26%, var(--surface));
+  box-shadow: inset 4px 0 0 var(--primary);
+}
+
+body.dark .option.correct {
+  background: color-mix(in srgb, var(--success) 24%, var(--surface));
+  box-shadow: inset 4px 0 0 var(--success);
+}
+
+body.dark .option.wrong {
+  background: color-mix(in srgb, var(--danger) 22%, var(--surface));
+  box-shadow: inset 4px 0 0 var(--danger);
 }
 
 .option-key {
