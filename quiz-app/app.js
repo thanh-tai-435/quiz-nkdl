@@ -9,6 +9,11 @@ const CHAPTERS = Array.from({ length: 9 }, (_, index) => {
     source: `../TracNghiem_Chuong${chapter}_NhaKhoDuLieuVaTichHop.md`,
   };
 });
+const HARD_QUIZ = {
+  id: "hard",
+  title: "Câu khó / câu bẫy",
+  source: "../BoSung_CauHoi_Kho_DeThi.md",
+};
 
 const els = {
   loadingState: document.querySelector("#loadingState"),
@@ -96,10 +101,10 @@ function parseMarkdown(markdown, chapter) {
       if (current) parsed.push(current);
       const number = Number(questionMatch[1]);
       current = {
-        uid: `C${chapter}-${number}`,
+        uid: `${chapter === HARD_QUIZ.id ? "H" : `C${chapter}`}-${number}`,
         id: number,
         chapter: String(chapter),
-        chapterTitle: `Chương ${chapter}`,
+        chapterTitle: chapter === HARD_QUIZ.id ? HARD_QUIZ.title : `Chương ${chapter}`,
         section,
         text: questionMatch[2].trim(),
         options: [],
@@ -240,6 +245,7 @@ function getCurrentQuestion() {
 
 function getChapterLabel() {
   if (chapterMode === "mixed") return "Tổng hợp 9 chương";
+  if (chapterMode === HARD_QUIZ.id) return HARD_QUIZ.title;
   return `Chương ${chapterMode}`;
 }
 
@@ -252,6 +258,8 @@ function updateTitle() {
   els.quizSubtitle.textContent =
     chapterMode === "mixed"
       ? `Đề ${examIds.length} câu - ${counts.join(", ")}`
+      : chapterMode === HARD_QUIZ.id
+        ? `Đề ${examIds.length} câu bẫy`
       : `Đề ${examIds.length} câu`;
 }
 
@@ -490,8 +498,9 @@ async function init() {
   els.shuffleToggle.checked = shuffle;
 
   try {
+    const sources = [...CHAPTERS, HARD_QUIZ];
     const chapterQuestions = await Promise.all(
-      CHAPTERS.map(async (chapter) => {
+      sources.map(async (chapter) => {
         const response = await fetch(chapter.source);
         if (!response.ok) throw new Error(`${chapter.title}: HTTP ${response.status}`);
         const markdown = await response.text();
