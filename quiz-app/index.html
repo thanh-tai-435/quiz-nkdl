@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luyện trắc nghiệm 9 chương</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Bảng điều khiển">
+        <div class="brand">
+          <p class="eyebrow">Nhà kho dữ liệu & tích hợp</p>
+          <h1 id="appTitle">Luyện trắc nghiệm</h1>
+          <p id="quizSubtitle" class="brand-subtitle">Đề 30 câu</p>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+            <span id="themeText">Dark mode</span>
+          </button>
+        </div>
+
+        <section class="panel compact">
+          <div class="score-row">
+            <span>Tiến độ</span>
+            <strong id="progressText">0/0</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <div class="score-grid">
+            <div>
+              <span>Đúng</span>
+              <strong id="correctCount">0</strong>
+            </div>
+            <div>
+              <span>Sai</span>
+              <strong id="wrongCount">0</strong>
+            </div>
+            <div>
+              <span>Điểm</span>
+              <strong id="scoreText">0%</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <label class="field-label" for="chapterSelect">Bộ câu hỏi</label>
+          <select id="chapterSelect">
+            <option value="mixed">Tổng hợp 9 chương</option>
+            <option value="1">Chương 1</option>
+            <option value="2">Chương 2</option>
+            <option value="3">Chương 3</option>
+            <option value="4">Chương 4</option>
+            <option value="5">Chương 5</option>
+            <option value="6">Chương 6</option>
+            <option value="7">Chương 7</option>
+            <option value="8">Chương 8</option>
+            <option value="9">Chương 9</option>
+          </select>
+
+          <label class="field-label" for="modeSelect">Chế độ</label>
+          <select id="modeSelect">
+            <option value="all">Đề hiện tại</option>
+            <option value="wrong">Luyện câu sai</option>
+            <option value="unanswered">Câu chưa làm</option>
+          </select>
+
+          <label class="toggle-row">
+            <input id="shuffleToggle" type="checkbox" />
+            <span>Trộn thứ tự câu</span>
+          </label>
+
+          <label class="field-label" for="jumpSelect">Đi đến câu</label>
+          <select id="jumpSelect"></select>
+
+          <div class="button-stack">
+            <button id="newExamBtn" type="button">Tạo đề mới</button>
+            <button id="restartBtn" class="secondary" type="button">Làm lại đề này</button>
+            <button id="resetBtn" class="ghost" type="button">Xóa kết quả</button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="quiz-area" aria-live="polite">
+        <div id="loadingState" class="state-card">Đang tải câu hỏi...</div>
+
+        <article id="questionCard" class="question-card hidden">
+          <div class="question-meta">
+            <span id="sectionLabel"></span>
+            <span id="questionNumber"></span>
+          </div>
+          <h2 id="questionText"></h2>
+          <div id="optionsList" class="options-list"></div>
+          <div id="feedbackBox" class="feedback hidden"></div>
+          <div class="nav-row">
+            <button id="prevBtn" class="secondary" type="button">Trước</button>
+            <button id="checkBtn" type="button">Kiểm tra</button>
+            <button id="nextBtn" class="secondary" type="button">Tiếp</button>
+          </div>
+        </article>
+
+        <article id="summaryCard" class="summary-card hidden">
+          <p class="eyebrow">Kết quả</p>
+          <h2 id="summaryTitle">Hoàn thành</h2>
+          <p id="summaryText"></p>
+          <div class="summary-actions">
+            <button id="reviewWrongBtn" type="button">Ôn câu sai</button>
+            <button id="summaryRestartBtn" class="secondary" type="button">Làm lại bộ này</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

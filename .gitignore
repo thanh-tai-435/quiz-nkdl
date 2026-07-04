@@ -1,0 +1,6 @@
+*
+!.gitignore
+!README.md
+!quiz-app/
+!quiz-app/**
+!TracNghiem_Chuong*_NhaKhoDuLieuVaTichHop.md
