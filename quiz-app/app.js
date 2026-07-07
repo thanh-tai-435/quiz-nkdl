@@ -1,5 +1,5 @@
 const QUESTION_LIMIT = 30;
-const STORAGE_KEY = "nkdl-quiz-9-chapters-state-v1";
+const STORAGE_KEY = "nkdl-quiz-9-chapters-state-v2";
 const THEME_KEY = "nkdl-quiz-theme-v1";
 const CHAPTERS = Array.from({ length: 9 }, (_, index) => {
   const chapter = index + 1;
@@ -14,6 +14,13 @@ const HARD_QUIZ = {
   title: "Câu khó / câu bẫy",
   source: "../BoSung_CauHoi_Kho_DeThi.md",
 };
+const FINAL_QUIZ = {
+  id: "final100",
+  title: "Đề tổng hợp 100 câu",
+  source: "../quiz_sources/de_tong_hop_100_nkdl_th.md",
+  limit: 100,
+};
+const QUIZ_BANKS = [...CHAPTERS, HARD_QUIZ, FINAL_QUIZ];
 
 const els = {
   loadingState: document.querySelector("#loadingState"),
@@ -101,10 +108,10 @@ function parseMarkdown(markdown, chapter) {
       if (current) parsed.push(current);
       const number = Number(questionMatch[1]);
       current = {
-        uid: `${chapter === HARD_QUIZ.id ? "H" : `C${chapter}`}-${number}`,
+        uid: `${chapter === HARD_QUIZ.id ? "H" : chapter === FINAL_QUIZ.id ? "F100" : `C${chapter}`}-${number}`,
         id: number,
         chapter: String(chapter),
-        chapterTitle: chapter === HARD_QUIZ.id ? HARD_QUIZ.title : `Chương ${chapter}`,
+        chapterTitle: QUIZ_BANKS.find((item) => item.id === String(chapter))?.title || `Chương ${chapter}`,
         section,
         text: questionMatch[2].trim(),
         options: [],
@@ -192,7 +199,8 @@ function createExam() {
 
   if (chapterMode !== "mixed") {
     const pool = allQuestions.filter((q) => q.chapter === chapterMode);
-    examIds = takeRandom(pool, QUESTION_LIMIT).map((q) => q.uid);
+    const bank = QUIZ_BANKS.find((item) => item.id === chapterMode);
+    examIds = takeRandom(pool, bank?.limit || QUESTION_LIMIT).map((q) => q.uid);
   } else {
     const chapters = shuffled(CHAPTERS);
     const baseCount = Math.floor(QUESTION_LIMIT / CHAPTERS.length);
@@ -246,6 +254,7 @@ function getCurrentQuestion() {
 function getChapterLabel() {
   if (chapterMode === "mixed") return "Tổng hợp 9 chương";
   if (chapterMode === HARD_QUIZ.id) return HARD_QUIZ.title;
+  if (chapterMode === FINAL_QUIZ.id) return FINAL_QUIZ.title;
   return `Chương ${chapterMode}`;
 }
 
@@ -498,7 +507,7 @@ async function init() {
   els.shuffleToggle.checked = shuffle;
 
   try {
-    const sources = [...CHAPTERS, HARD_QUIZ];
+    const sources = QUIZ_BANKS;
     const chapterQuestions = await Promise.all(
       sources.map(async (chapter) => {
         const response = await fetch(chapter.source);
